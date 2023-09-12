@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Добавление участников</title>
+    <title>Выбор переговорки</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Добавление участников</h1>
+        <h1>Выбор переговорки</h1>
     </header>
     <main>
-        <section class="add-participants">
-            <form id="participant-form">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Адрес электронной почты:</label>
-                <input type="email" id="email" name="email" required>
-                <button id="add-button">Добавить участника</button>
-            </form>
-        </section>
-        <section class="participants-list">
-            <h2>Список участников</h2>
-            <ul id="participants">
-                <!-- Здесь будут отображаться добавленные участники -->
-            </ul>
-        </section>
-        <section class="confirmation">
-            <button id="continue-button">Продолжить</button>
+        <section class="meeting-rooms">
+            <div class="meeting-room">
+                <img src="room1.jpg" alt="Переговорка 1">
+                <h2>Переговорка 1</h2>
+                <p>Просторная переговорка с видом на город. Вмещает до 10 человек.</p>
+                <button>Выбрать</button>
+            </div>
+            <div class="meeting-room">
+                <img src="room2.jpg" alt="Переговорка 2">
+                <h2>Переговорка 2</h2>
+                <p>Уютная и тихая комната для небольших групп до 6 человек.</p>
+                <button>Выбрать</button>
+            </div>
+            <!-- Добавьте остальные переговорки аналогичным образом -->
         </section>
     </main>
 </body>
