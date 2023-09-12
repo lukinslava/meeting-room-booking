@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Бронирование переговорок</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h1>Меню</h1>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Бронирование</a></li>
+            <li><a href="#">Отчеты</a></li>
+            <li><a href="#">Настройки</a></li>
+        </ul>
+    </aside>
+    <main class="content">
+        <header>
+            <h1>Выбор местоположения и даты</h1>
+        </header>
+        <section class="booking-form">
+            <label for="office">Выберите офис:</label>
+            <select id="office" name="office">
+                <option value="office1">Офис 1</option>
+                <option value="office2">Офис 2</option>
+                <option value="office3">Офис 3</option>
+            </select>
+            <label for="date">Выберите дату:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Выберите время:</label>
+            <input type="time" id="time" name="time">
+            <button id="search-button">Поиск доступных переговорок</button>
+        </section>
+    </main>
+</body>
+</html>
