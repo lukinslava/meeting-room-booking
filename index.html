@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сводная информация о бронировании</title>
+    <title>Добавление участников</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Сводная информация о бронировании</h1>
+        <h1>Добавление участников</h1>
     </header>
     <main>
-        <section class="summary">
-            <h2>Информация о бронировании</h2>
-            <p><strong>Местоположение:</strong> Офис 1</p>
-            <p><strong>Дата:</strong> 2023-09-15</p>
-            <p><strong>Время начала:</strong> 14:00</p>
-            <p><strong>Продолжительность:</strong> 1 час</p>
-            <p><strong>Выбранная переговорка:</strong> Переговорка "Альфа"</p>
+        <section class="add-participants">
+            <form id="participant-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Адрес электронной почты:</label>
+                <input type="email" id="email" name="email" required>
+                <button id="add-button">Добавить участника</button>
+            </form>
         </section>
-        <section class="participants">
-            <h2>Участники встречи</h2>
-            <ul>
-                <li>Сотрудник 1: john@example.com</li>
-                <li>Сотрудник 2: jane@example.com</li>
-                <li>Сотрудник 3: bob@example.com</li>
+        <section class="participants-list">
+            <h2>Список участников</h2>
+            <ul id="participants">
+                <!-- Здесь будут отображаться добавленные участники -->
             </ul>
         </section>
         <section class="confirmation">
-            <p>Пожалуйста, подтвердите ваше бронирование, нажав на кнопку ниже:</p>
-            <button id="confirm-button">Подтвердить бронирование</button>
+            <button id="continue-button">Продолжить</button>
         </section>
     </main>
 </body>
