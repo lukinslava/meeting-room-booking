@@ -25,30 +25,21 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.summary, .participants, .confirmation {
+.add-participants, .participants-list, .confirmation {
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 1.2rem;
-    margin-top: 0;
-}
-
-p {
-    margin: 0;
-}
-
-strong {
+label {
     font-weight: bold;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
@@ -63,3 +54,13 @@ button {
 button:hover {
     background-color: #0055aa;
 }
+
+.participants-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.participants-list li {
+    margin-bottom: 5px;
+}
+
