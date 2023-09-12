@@ -25,21 +25,31 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.add-participants, .participants-list, .confirmation {
-    margin-bottom: 20px;
+.meeting-rooms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 столбца в ряду */
+    gap: 20px; /* Промежуток между плитками */
 }
 
-label {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+.meeting-room {
     border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+p {
+    margin: 10px 0;
 }
 
 button {
@@ -53,11 +63,6 @@ button {
 
 button:hover {
     background-color: #0055aa;
-}
-
-.participants-list ul {
-    list-style-type: none;
-    padding: 0;
 }
 
 .participants-list li {
